@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: lavender; */
+}
+.sidebar {
+  background-color: teal;
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+}
+
+.sidebar nav {
+  padding: 49px;
+  /* background-color: teal; */
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 20px;
+  padding: 20px 0;
+  /* background-color: teal; */
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: white;
+  /* background-color: teal; */
+}
+
+.main {
+  background-color: lavender;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+}
+
+.infocontainer {
+  /* background-color: green; */
+  height: 50vh;
+  width: 75vw;
+  margin: 95px auto 0px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+}
+
+.hello {
+  font-size: 30px;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 31px;
+}
+
+.buttons {
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 14px;
+  color: white;
+  background-color: rgb(195, 195, 220);
+  /* font-weight: bold; */
+  font-size: 20px;
+  margin: 0px 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-sm {
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 10px 15px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: rgb(195, 195, 220);
+}
+
+.devPic img {
+  width: 270px;
+  height: 80vh;
+}
+
+/* contact form style */
+
+.contactform {
+  padding: 0 36px;
+  font-family: "Fira Sans", sans-serif;
+  padding-top: 40px;
+  margin: 0 200px;
+}
+
+.contactform h1 {
+  font-family: "Source Code Pro", monospace;
+  padding: 22px 0;
+}
+
+.contactform form div {
+  padding: 9px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform form div input {
+  width: 35vw;
+  border-radius: 5px;
+  margin: 6px 0 0 0;
+  padding: 3px;
+}
+
+#emailHelp {
+  color: darkgray;
+  font-size: 10px;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+}
+
+/* about section */
+
+.aboutcontainer {
+  height: 50vh;
+  width: 75vw;
+  margin: 95px auto 0px 200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 28px;
+}
+.aboutcontainer .devPic {
+  height: 100vh;
+}
+
+/* project section style */
+
+.blogContainer {
+  padding: 0 36px;
+  font-family: "Fira Sans", sans-serif;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px;
+}
+
+.blogContainer .itemContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.blogItem {
+  font-family: "Fira Sans", sans-serif;
+  /* justify-content: space-around; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  /* margin: 23px; */
+  padding: 22px 0;
+}
+p {
+  font-family: "Source Code Pro", monospace;
+}
+
+.blogItem button a {
+  text-decoration: none;
+  color: white;
+}
+
+.blogItem h2 {
+  padding-bottom: 7px;
+}
+
+/* SKILL SECTION */
+
+.skillContainer {
+  padding: 12px;
+  margin: 0 200px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.skill {
+  width: 265px;
+  height: 6px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.hundred {
+  width: 265px;
+  background-color: antiquewhite;
+}
+
+.fifty {
+  width: 125px;
+  background-color: aquamarine;
+}
+.t5 {
+  width: 75px;
+  background-color: beige;
+}
+.n5 {
+  width: 200;
+  background-color: blueviolet;
+}
+
+.sidebarGo {
+  transform: translate(-503px, 0px);
+  position: absolute;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+  /* background-color: teal; */
+}
+
+.ham {
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: lavender;
+}
+
+.cross {
+  margin-left: 120px;
+  margin-top: 10px;
+  /* background-color: teal; */
+}
+
+/* media queries */
+
+@media (max-width: 900px) {
+  /* .sidebar {
+    transform: translate(-503px, 0px);
+    position: absolute;
+  } */
+  .devPic {
+    display: none;
+  }
+}
