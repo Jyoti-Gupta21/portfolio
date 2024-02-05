@@ -9,7 +9,7 @@
   background-color: teal;
   font-family: "Fira Sans", sans-serif;
   height: 100vh;
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in-out;
   position: absolute;
 }
 
